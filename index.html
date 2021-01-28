@@ -33,7 +33,11 @@
 
         <!-- Reserve Campsite button -->
         <div class="col-md-4 col-xl-2 mt-4">
-          <a class="text-nowrap" href="#reserveForm"><button type="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <br/><strong>1-206-555-1234</strong>">Reserve Campsite</button></a>
+          <a class="text-nowrap" >
+            <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">
+              Reserve Campsite
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -194,7 +198,6 @@
         <div class="card">
           <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
           <div class="card-body">
-
             <form id="reserveForm">
               <div class="row form-group">
                   <label for="numCampers" class="col-sm-6 col-form-label" >Number of Campers</label>
@@ -223,12 +226,12 @@
                   <button type="submit" class="btn btn-primary">Search</button>
                 </div>
               </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -249,8 +252,8 @@
           <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
         </div>
         <div class="col-sm-4 text-center">
-          <a role="button" btn btn-link" href="tel:12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-          <a role="button" btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+          <a role="button" btn btn-link href="tel:12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+          <a role="button" btn btn-link href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
         </div>
       </div>
     </div>
@@ -260,15 +263,6 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- ToolTips - jquery -->
-  <script>
-    $(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    })
-  </script>
-
-
 
 </body>
 
