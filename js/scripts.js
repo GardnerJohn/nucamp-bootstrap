@@ -1,4 +1,4 @@
-const { Modal } = require("bootstrap");
+// const { Modal } = require("bootstrap");
 
 $(function () {
   $(".carousel").carousel({interval: 2000});
@@ -13,16 +13,19 @@ $(function () {
       $("#carouselButton").children("i").addClass("fa-pause");
     }
   });
+});
 
-  
-
+// Reserve Modal
+$(function() {
   $("#reserveButton").click(function () {
     $("#reserveModal").modal("show");
+  });
 });
-​
+
+// Login Modal
+$(function() {
 $("#loginButton").click(function () {
-    $("#loginModal").modal("show");
+  $("#loginModal").modal("show");
 });
 
-
-});
+})
