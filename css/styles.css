@@ -44,8 +44,8 @@ header h2 {
 
 #reserveModal .modal-header {
   background-color: #17a2b8;
-  background: white; }
+  color: white; }
 
 #loginModal .modal-header {
   background-color: #901cad;
-  background: white; }
+  color: white; }
