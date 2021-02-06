@@ -13,19 +13,13 @@ $(function () {
       $("#carouselButton").children("i").addClass("fa-pause");
     }
   });
-});
 
-// Reserve Modal
-$(function() {
-  $("#reserveButton").click(function () {
-    $("#reserveModal").modal("show");
-  });
-});
+  $("#loginButton").click(function () {
+    $("#loginModal").modal("show");
+    });
 
-// Login Modal
-$(function() {
-$("#loginButton").click(function () {
-  $("#loginModal").modal("show");
+    $("#reserveButton").click(function () {
+      $("#reserveModal").modal("show");
+    });
+    
 });
-
-})
